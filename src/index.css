@@ -1,0 +1,10 @@
+:root {
+  /* Colors: */
+  --unnamed-color-707070: #707070;
+  --unnamed-color-ffffff: #ffffff;
+}
+body {
+  background-color: #222831;
+  top: 0px;
+  left: 0px;
+}
