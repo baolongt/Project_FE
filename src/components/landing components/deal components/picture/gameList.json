@@ -1,0 +1,52 @@
+{
+  "games": [
+    {
+      "name": "Hades",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "price_overview": {
+        "currency": "VND",
+        "initial": 22000000,
+        "final": 22000000,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "220.000₫"
+      }
+    },
+    {
+      "name": "Hades",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "price_overview": {
+        "currency": "VND",
+        "initial": 22000000,
+        "final": 22000000,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "220.000₫"
+      }
+    },
+    {
+      "name": "Hades",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "price_overview": {
+        "currency": "VND",
+        "initial": 22000000,
+        "final": 22000000,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "220.000₫"
+      }
+    },
+    {
+      "name": "Hades",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "price_overview": {
+        "currency": "VND",
+        "initial": 22000000,
+        "final": 22000000,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "220.000₫"
+      }
+    }
+  ]
+}
