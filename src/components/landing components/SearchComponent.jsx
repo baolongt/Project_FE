@@ -1,15 +1,15 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import SalePage from "./deal components/SalePage";
-import "./landing.css";
 
 const SearchComponent = () => {
   return (
     <>
-      <h4 id="bigTitle">Find best deal for your game</h4>
-      <div id="search">
+      <div className="text-5xl text-center mt-6 font-bold">
+        Find best deal for your game
+      </div>
+      <div className="ml-60 w-8/12">
         <SearchBar />
-        <button id="btnSearch">Search</button>
         <SalePage />
       </div>
     </>

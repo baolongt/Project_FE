@@ -1,15 +1,13 @@
 {
   "games": [
     {
-      "name": "Hades",
-      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "name": "Ori and the Will of the Wisps",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1057090/header.jpg?t=1612897638",
       "price_overview": {
         "currency": "VND",
-        "initial": 22000000,
-        "final": 22000000,
-        "discount_percent": 0,
-        "initial_formatted": "",
-        "final_formatted": "220.000₫"
+        "discount_percent": 67,
+        "initial_formatted": "250.000₫",
+        "final_formatted": "85.000₫"
       }
     },
     {
@@ -17,35 +15,29 @@
       "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
       "price_overview": {
         "currency": "VND",
-        "initial": 22000000,
-        "final": 22000000,
-        "discount_percent": 0,
-        "initial_formatted": "",
-        "final_formatted": "220.000₫"
+        "discount_percent": 20,
+        "initial_formatted": "220.000₫",
+        "final_formatted": "176.000₫"
       }
     },
     {
-      "name": "Hades",
-      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg?t=1619665486",
       "price_overview": {
         "currency": "VND",
-        "initial": 22000000,
-        "final": 22000000,
-        "discount_percent": 0,
-        "initial_formatted": "",
-        "final_formatted": "220.000₫"
+        "discount_percent": 50,
+        "initial_formatted": "340.000₫",
+        "final_formatted": "170.000₫"
       }
     },
     {
-      "name": "Hades",
-      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg?t=1619047247",
+      "name": "ARK: Survival Evolved",
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/346110/header.jpg?t=1617051830",
       "price_overview": {
         "currency": "VND",
-        "initial": 22000000,
-        "final": 22000000,
-        "discount_percent": 0,
-        "initial_formatted": "",
-        "final_formatted": "220.000₫"
+        "discount_percent": 80,
+        "initial_formatted": "390.000₫",
+        "final_formatted": "78.000₫"
       }
     }
   ]
