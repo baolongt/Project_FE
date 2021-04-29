@@ -4,19 +4,20 @@ import GameInfo from "./GameInfo";
 const Game = () => {
   const data = {
     type: "game",
-    name: "Counter-Strike: Global Offensive",
-    about_the_game:
-      "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.). Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC action game in the world almost immediately after its release in August 1999,&quot; said Doug Lombardi at Valve. &quot;For the past 12 years, it has continued to be one of the most-played games in the world, headline competitive gaming tournaments and selling over 25 million units worldwide across the franchise. CS: GO promises to expand on CS' award-winning gameplay and deliver it to gamers on the PC as well as the next gen consoles and the Mac.&quot;",
-    developers: ["Valve", "Hidden Path Entertainment"],
+    name: "Dota 2",
+    steam_appid: 570,
+    short_description:
+      "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.",
+    developers: ["Valve"],
     header_image:
-      "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1612812939",
+      "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg?t=1618283868",
     platforms: {
       windows: true,
       mac: true,
       linux: true,
     },
     metacritic: {
-      score: 83,
+      score: 90,
       url:
         "https://www.metacritic.com/game/pc/counter-strike-global-offensive?ftag=MCD-06-10aaa1f",
     },
@@ -26,12 +27,8 @@ const Game = () => {
         description: "Multi-player",
       },
       {
-        id: 22,
-        description: "Steam Achievements",
-      },
-      {
-        id: 28,
-        description: "Full controller support",
+        id: 9,
+        description: "Co-op",
       },
       {
         id: 29,
@@ -42,28 +39,16 @@ const Game = () => {
         description: "Steam Workshop",
       },
       {
+        id: 40,
+        description: "SteamVR Collectibles",
+      },
+      {
         id: 35,
         description: "In-App Purchases",
       },
       {
         id: 8,
         description: "Valve Anti-Cheat enabled",
-      },
-      {
-        id: 15,
-        description: "Stats",
-      },
-      {
-        id: 41,
-        description: "Remote Play on Phone",
-      },
-      {
-        id: 42,
-        description: "Remote Play on Tablet",
-      },
-      {
-        id: 43,
-        description: "Remote Play on TV",
       },
     ],
     genres: [
@@ -74,6 +59,10 @@ const Game = () => {
       {
         id: "37",
         description: "Free to Play",
+      },
+      {
+        id: "2",
+        description: "Strategy",
       },
     ],
     release_date: {
@@ -87,7 +76,7 @@ const Game = () => {
 
   return (
     <Fragment>
-      <GameInfo data={data} />
+      <GameInfo key={data.steam_appid} data={data} />
     </Fragment>
   );
 };
