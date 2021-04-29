@@ -4,20 +4,20 @@ import GameInfo from "./GameInfo";
 const Game = () => {
   const data = {
     type: "game",
-    name: "Dota 2",
-    steam_appid: 570,
+    name: "Counter-Strike: Global Offensive",
+    steam_appid: 730,
     short_description:
-      "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.",
-    developers: ["Valve"],
+      "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).",
+    developers: ["Valve", "Hidden Path Entertainment"],
     header_image:
-      "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg?t=1618283868",
+      "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1612812939",
     platforms: {
       windows: true,
       mac: true,
       linux: true,
     },
     metacritic: {
-      score: 90,
+      score: 83,
       url:
         "https://www.metacritic.com/game/pc/counter-strike-global-offensive?ftag=MCD-06-10aaa1f",
     },
@@ -27,8 +27,12 @@ const Game = () => {
         description: "Multi-player",
       },
       {
-        id: 9,
-        description: "Co-op",
+        id: 22,
+        description: "Steam Achievements",
+      },
+      {
+        id: 28,
+        description: "Full controller support",
       },
       {
         id: 29,
@@ -39,16 +43,28 @@ const Game = () => {
         description: "Steam Workshop",
       },
       {
-        id: 40,
-        description: "SteamVR Collectibles",
-      },
-      {
         id: 35,
         description: "In-App Purchases",
       },
       {
         id: 8,
         description: "Valve Anti-Cheat enabled",
+      },
+      {
+        id: 15,
+        description: "Stats",
+      },
+      {
+        id: 41,
+        description: "Remote Play on Phone",
+      },
+      {
+        id: 42,
+        description: "Remote Play on Tablet",
+      },
+      {
+        id: 43,
+        description: "Remote Play on TV",
       },
     ],
     genres: [
@@ -60,17 +76,13 @@ const Game = () => {
         id: "37",
         description: "Free to Play",
       },
-      {
-        id: "2",
-        description: "Strategy",
-      },
     ],
     release_date: {
       coming_soon: false,
       date: "22 Aug, 2012",
     },
     recommendations: {
-      total: 3057769,
+      total: 3058047,
     },
   };
 
