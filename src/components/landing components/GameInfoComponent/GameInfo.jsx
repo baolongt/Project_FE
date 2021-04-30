@@ -29,11 +29,15 @@ const GameInfo = (props) => {
 
   return (
     <div className="container bg-gray-700 mx-auto my-8 pt-8 pb-8 ">
-      <div className="mb-6 space-y-6 text-center lg:text-left lg:grid lg:grid-cols-10 ">
-        <h1 className="font-bold text-7xl lg:col-span-8">{information.name}</h1>
-        <p className="italic lg:col-span-5">{aboutTheGame}</p>
+      <div className="mb-6 space-y-6 text-center lg:ml-8 lg:text-left lg:grid lg:grid-cols-10 ">
+        <h1 className="font-bold text-5xl md:text-7xl lg:col-span-8">
+          {information.name}
+        </h1>
+        <p className="italic text-justify text-sm md:text-base lg:col-span-6">
+          {aboutTheGame}
+        </p>
       </div>
-      <div className="container mx-auto mt-16 grid grid-cols-11">
+      <div className="container mx-auto grid grid-cols-11 md:mt-16 lg:ml-8">
         <div className="col-span-6">
           <img
             className="h-auto w-full"
@@ -45,7 +49,7 @@ const GameInfo = (props) => {
               return (
                 <li
                   key={el.id}
-                  className="inline-block font-bold list-category"
+                  className="text-sm md:text-base inline-block font-bold list-category"
                 >
                   {el.description}
                 </li>
@@ -55,7 +59,7 @@ const GameInfo = (props) => {
               return (
                 <li
                   key={el.id}
-                  className="inline-block font-bold list-category"
+                  className="text-sm md:text-base inline-block font-bold list-category"
                 >
                   {el.description}
                 </li>
@@ -64,37 +68,59 @@ const GameInfo = (props) => {
           </ul>
         </div>
 
-        <div className="ml-3 sm:ml-12 lg:ml-24 col-span-5 grid grid-cols-2">
-          <div className="col-span-1 space-y-6 lg:space-y-12">
-            <p className="text-xs sm:text-base font-bold">App Type</p>
-            <p className="text-xs sm:text-base font-bold">Developers</p>
-            <p className="text-xs sm:text-base font-bold">Platforms</p>
-            <p className="text-xs sm:text-base font-bold">Release Date</p>
-            <p className="text-xs sm:text-base font-bold">Recommend</p>
-            <p className="text-xs sm:text-base font-bold">
-              Score In Metacritic
-            </p>
-          </div>
-          <div className="col-span-1 space-y-6 lg:space-y-12">
-            <p className="text-xs font-bold">
-              {information.type.replace(/^\w/, (c) => c.toUpperCase())}
-            </p>
-            <p className="text-xs sm:text-base font-bold">
-              {information.developers.join(", ")}
-            </p>
-            <p className="text-xs sm:text-base font-bold">
-              {gamePlatforms.join(", ")}
-            </p>
-            <p className="text-xs sm:text-base font-bold">
-              {information.release_date.date}
-            </p>
-            <p className="text-xs sm:text-base font-bold">
-              {information.recommendations.total}
-            </p>
-            <p className="text-xs sm:text-base font-bold">
-              {information.metacritic.score}
-            </p>
-          </div>
+        <div className="ml-2 sm:ml-4 lg:ml-16 col-span-5">
+          <table class="table-auto">
+            <tbody>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  App Type
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  {information.type.replace(/^\w/, (c) => c.toUpperCase())}
+                </td>
+              </tr>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  Developers
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  {information.developers.join(", ")}
+                </td>
+              </tr>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  Platforms
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  {gamePlatforms.join(", ")}
+                </td>
+              </tr>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  Release Date
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  {information.release_date.date}
+                </td>
+              </tr>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg ">
+                  Recommend
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
+                  {information.recommendations.total}
+                </td>
+              </tr>
+              <tr>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base ">
+                  Score In Metacritic
+                </td>
+                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base ">
+                  {information.metacritic.score}
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
