@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import SearchComponent from "./components/landing components/SearchComponent";
 import { Route, BrowserRouter } from "react-router-dom";
-import Game from "./components/landing components/GameInfoComponent/Game";
+import Game from "./components/GameDetail/Game";
 function App() {
   return (
     <>
