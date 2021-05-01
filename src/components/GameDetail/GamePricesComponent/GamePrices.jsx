@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./GamePrices.css";
+import logo from "./images/ae.png";
 
 const GamePrices = (props) => {
   const [priceOfCountries, setPriceOfCountries] = useState(
     props.gamePrices.data.price_countries
   );
+
+  const name = "ae";
 
   const [status, setStatus] = useState({
     isSortName: false,
@@ -14,8 +17,6 @@ const GamePrices = (props) => {
     isSortConverted: false,
     sortConvertedStatus: 0,
   });
-
-  const test = "only test";
 
   const highlightPercent = (string) => {
     const length = string.length;
@@ -178,7 +179,6 @@ const GamePrices = (props) => {
 
   return (
     <div className="container bg-gray-700 mx-auto my-2 pt-2 pb-2 md:my-8 md:pt-4 md:pb-8 ">
-      {test}
       <h1 className="text-center text-bold mb-3 text-3xl sm:mb-5 sm:text-5xl md:mb-6 md:text-6xl">
         Store Prices
       </h1>
@@ -257,8 +257,22 @@ const GamePrices = (props) => {
           <tbody>
             {priceOfCountries.map((el) => {
               return (
-                <tr key={el.id}>
+                <tr key={el.id} className="hover:bg-gray-800">
                   <td className="border-b text-xs sm:text-base sm:pb-2 md:text-lg">
+                    <img
+                      src={`https://flagcdn.com/16x12/${
+                        el.id === "uk" ? "gb" : el.id
+                      }.png`}
+                      srcset={`https://flagcdn.com/32x24/$${
+                        el.id === "uk" ? "gb" : el.id
+                      }.png 2x, https://flagcdn.com/48x36/${
+                        el.id === "uk" ? "gb" : el.id
+                      }.png 3x`}
+                      width="14"
+                      height="14"
+                      alt={el.id}
+                      className="inline-block mr-1 md:mr-2 md:w-6"
+                    ></img>
                     {el.name}
                   </td>
                   <td className="border-b text-xs text-center hidden sm:table-cell sm:text-base sm:pb-1 md:text-lg">

@@ -30,7 +30,7 @@ const GameInfo = (props) => {
   return (
     <div className="container bg-gray-700 mx-auto my-8 pt-8 pb-8 ">
       <div className="mb-6 space-y-6 text-center lg:ml-8 lg:text-left lg:grid lg:grid-cols-10 ">
-        <h1 className="font-bold text-5xl md:text-7xl lg:col-span-8">
+        <h1 className="font-bold text-5xl md:text-7xl lg:col-span-7">
           {information.name}
         </h1>
         <p className="italic text-justify text-sm md:text-base lg:col-span-6">
@@ -68,7 +68,7 @@ const GameInfo = (props) => {
           </ul>
         </div>
 
-        <div className="ml-2 sm:ml-4 lg:ml-16 col-span-5">
+        <div className="col-span-5 ml-2 sm:ml-4 lg:ml-16 lg:mr-16">
           <table className="table-auto">
             <tbody>
               <tr>
