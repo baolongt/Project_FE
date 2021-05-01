@@ -69,7 +69,7 @@ const GameInfo = (props) => {
         </div>
 
         <div className="ml-2 sm:ml-4 lg:ml-16 col-span-5">
-          <table class="table-auto">
+          <table className="table-auto">
             <tbody>
               <tr>
                 <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
