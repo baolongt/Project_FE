@@ -5,6 +5,7 @@ const GamePrices = (props) => {
   const [priceOfCountries, setPriceOfCountries] = useState(
     props.gamePrices.data.price_countries
   );
+
   const [status, setStatus] = useState({
     isSortName: false,
     sortNameStatus: 0,
@@ -13,6 +14,8 @@ const GamePrices = (props) => {
     isSortConverted: false,
     sortConvertedStatus: 0,
   });
+
+  const test = "only test";
 
   const highlightPercent = (string) => {
     const length = string.length;
@@ -175,7 +178,10 @@ const GamePrices = (props) => {
 
   return (
     <div className="container bg-gray-700 mx-auto my-2 pt-2 pb-2 md:my-8 md:pt-4 md:pb-8 ">
-      <h1 className="text-center text-bold mb-3 text-3xl sm:mb-5 sm:text-5xl md:mb-6 md:text-6xl">Store Prices</h1>
+      {test}
+      <h1 className="text-center text-bold mb-3 text-3xl sm:mb-5 sm:text-5xl md:mb-6 md:text-6xl">
+        Store Prices
+      </h1>
       <div className="xl:mx-16">
         <table className="table-auto border-collapse text-left">
           <thead>
