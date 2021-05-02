@@ -1,8 +1,13 @@
 import React from "react";
 import "./SaleComponent.css";
+
 const SaleComponent = (props) => {
   return (
-    <div className="relative">
+    <div
+      className="relative cursor-pointer 
+    transition md:duration-500 md:ease-in-out 
+    transform md:hover:-translate-y-1 md:hover:scale-110"
+    >
       <img className="w-full" src={props.imageUrl} alt={props.name} />
       <div
         className="w-full h-14 bg-black grid grid-cols-10 gap-1
@@ -25,19 +30,35 @@ const SaleComponent = (props) => {
           >
             {props.price}
           </div>
-          <div
-            className="sale col-span-2 bg-sale-green text-center -mt-2 mb-3 mx-1 text-sm font-bold 
+          {/* <div
+            className="sale col-span-2 bg-sale-green text-center 
+          -mt-2 mb-3 mx-1 text-sm font-bold 
           sm:text-base sm:mx-6
           md:mx-1
           lg:mx-3
           xl:mx-4
-          2xl:mx-6 2xl:mb-6
+          2xl:mx-6 2xl:-mt-5 2xl:mb-4 2xl:text-xl
           "
           >
             -{props.discount}%
+          </div> */}
+          <div
+            className="col-span-2 text-center font-bold text-sm
+          "
+          >
+            <p
+              className="sale bg-sale-green w-4/5 -mt-4
+            sm:w-2/4
+            md:w-9/12 md:-mt-3 md:ml-2
+            lg:w-8/12 
+            xl:h-7 xl:text-xl xl:-mt-5 xl:ml-5
+            "
+            >
+              -{props.discount}%
+            </p>
           </div>
           <div
-            className="col-span-2 text-sm text-left font-bold
+            className="col-start-3 col-span-2 text-sm text-left font-bold
             lg:text-base lg:-mt-1 lg:-ml-2
             2xl:text-xl 2xl:-mt-2
           "
