@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import SaleComponent from "./SaleComponent";
 import jsonFile from "./picture/gameList.json";
+import DataProvider from "../../../API/DataProvider";
+
 let data = JSON.parse(JSON.stringify(jsonFile)).games;
+
 let counter = 0;
 const SalePage = () => {
+  const gameData = useContext(DataProvider);
+  console.log(gameData);
   return (
     <div
       className="grid grid-cols-1 gap-10 mt-10
