@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./GamePrices.css";
-import logo from "./images/ae.png";
 
 const GamePrices = (props) => {
   const [priceOfCountries, setPriceOfCountries] = useState(
-    props.gamePrices.data.price_countries
+    props.gamePrices
   );
-
-  const name = "ae";
 
   const [status, setStatus] = useState({
     isSortName: false,
@@ -178,7 +175,7 @@ const GamePrices = (props) => {
   };
 
   return (
-    <div className="container bg-gray-700 mx-auto my-2 pt-2 pb-2 md:my-8 md:pt-4 md:pb-8 ">
+    <div className="container bg-gray-700 rounded-lg mx-auto my-2 pt-2 pb-2 md:my-8 md:pt-4 md:pb-8 ">
       <h1 className="text-center text-bold mb-3 text-3xl sm:mb-5 sm:text-5xl md:mb-6 md:text-6xl">
         Store Prices
       </h1>
@@ -263,7 +260,7 @@ const GamePrices = (props) => {
                       src={`https://flagcdn.com/16x12/${
                         el.id === "uk" ? "gb" : el.id
                       }.png`}
-                      srcset={`https://flagcdn.com/32x24/$${
+                      srcSet={`https://flagcdn.com/32x24/$${
                         el.id === "uk" ? "gb" : el.id
                       }.png 2x, https://flagcdn.com/48x36/${
                         el.id === "uk" ? "gb" : el.id
