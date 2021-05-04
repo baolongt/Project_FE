@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import SaleComponent from "./SaleComponent";
-import jsonFile from "./picture/gameList.json";
-import DataProvider from "../../../API/DataProvider";
+import { useDataContext } from "../../../API/DataProvider";
 
-let data = JSON.parse(JSON.stringify(jsonFile)).games;
-
-let counter = 0;
 const SalePage = () => {
-  const gameData = useContext(DataProvider);
-  console.log(gameData);
+  const { gameData, isLoading } = useDataContext();
+  // console.log(isLoading);
+  // console.log(gameData);
+  // if (gameData === undefined) {
+  //   throw new Error("Data didn't fetch");
+  // }
   return (
     <div
       className="grid grid-cols-1 gap-10 mt-10
@@ -16,18 +16,17 @@ const SalePage = () => {
     xl:grid-cols-3 xl:h-20
     "
     >
-      {data.map((item) => {
-        return (
-          <SaleComponent
-            imageUrl={item.imageUrl}
-            name={item.name}
-            key={++counter}
-            discount={item.price_overview.discount_percent}
-            price={item.price_overview.initial_formatted}
-            salePrice={item.price_overview.final_formatted}
-          />
-        );
-      })}
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <SaleComponent
+          imageUrl={gameData.header_image}
+          name={gameData.name}
+          discount={gameData.price_overview.discount_percent}
+          price={gameData.price_overview.initial_formatted}
+          salePrice={gameData.price_overview.final_formatted}
+        />
+      )}
     </div>
   );
 };
