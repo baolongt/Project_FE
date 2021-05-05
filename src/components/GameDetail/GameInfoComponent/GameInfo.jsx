@@ -1,4 +1,5 @@
 import "./GameInfo.css";
+import logo from "./SteamLogo.png";
 
 const GameInfo = (props) => {
   const information = props.data;
@@ -7,14 +8,6 @@ const GameInfo = (props) => {
     .join("")
     .split("&quot;")
     .join("");
-  let gameCategories = [];
-  if (information.categories.length > 3) {
-    gameCategories.push(information.categories[0]);
-    gameCategories.push(information.categories[1]);
-    gameCategories.push(information.categories[2]);
-  } else {
-    gameCategories = information.categories;
-  }
 
   const gamePlatforms = [];
   if (information.platforms.windows) {
@@ -28,12 +21,12 @@ const GameInfo = (props) => {
   }
 
   return (
-    <div className="container bg-gray-700 mx-auto my-8 pt-8 pb-8 ">
+    <div className="container bg-gray-700 rounded-lg mx-auto my-8 pt-8 pb-8 ">
       <div className="mb-6 space-y-6 text-center lg:ml-8 lg:text-left lg:grid lg:grid-cols-10 ">
-        <h1 className="font-bold text-5xl md:text-7xl lg:col-span-8">
+        <h1 className="font-bold text-3xl md:text-7xl lg:col-span-7">
           {information.name}
         </h1>
-        <p className="italic text-justify text-sm md:text-base lg:col-span-6">
+        <p className="italic text-justify text-xs md:text-base lg:col-span-6">
           {aboutTheGame}
         </p>
       </div>
@@ -45,40 +38,22 @@ const GameInfo = (props) => {
             alt="GameImage"
           />
           <ul className="space-x-1 lg:space-x-12 space-y-4 mt-2 text-center">
-            {information.genres.map((el) => {
+            {information.categories.map((el, index) => {
               return (
                 <li
-                  key={el.id}
+                  key={`category${index}`}
                   className="text-sm md:text-base inline-block font-bold list-category"
                 >
-                  {el.description}
-                </li>
-              );
-            })}
-            {gameCategories.map((el) => {
-              return (
-                <li
-                  key={el.id}
-                  className="text-sm md:text-base inline-block font-bold list-category"
-                >
-                  {el.description}
+                  {el}
                 </li>
               );
             })}
           </ul>
         </div>
 
-        <div className="ml-2 sm:ml-4 lg:ml-16 col-span-5">
+        <div className="col-span-5 ml-2 sm:ml-4 lg:ml-16 lg:mr-16">
           <table className="table-auto">
             <tbody>
-              <tr>
-                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
-                  App Type
-                </td>
-                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
-                  {information.type.replace(/^\w/, (c) => c.toUpperCase())}
-                </td>
-              </tr>
               <tr>
                 <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
                   Developers
@@ -111,14 +86,9 @@ const GameInfo = (props) => {
                   {information.recommendations.total}
                 </td>
               </tr>
-              <tr>
-                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base ">
-                  Score In Metacritic
-                </td>
-                <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base ">
-                  {information.metacritic.score}
-                </td>
-              </tr>
+              <a href={information.link_steam}>
+                <img className="mt-2 -ml-2 sm:mt-1 sm:-ml-5 md:mt-0 md:-ml-6 xl:-ml-10" src={logo} alt="SteamLogo" />
+              </a>
             </tbody>
           </table>
         </div>
