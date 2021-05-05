@@ -54,7 +54,7 @@ const SaleComponent = (props) => {
             xl:h-7 xl:text-xl xl:-mt-5 xl:ml-5
             "
             >
-              -{props.discount}%
+              {props.discount}
             </p>
           </div>
           <div
