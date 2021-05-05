@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SaleComponent from "./SaleComponent";
-import { useDataContext } from "../../../API/DataProvider";
-
+import API from "../../../API/HTTP";
 const SalePage = () => {
-  const { gameData, isLoading } = useDataContext();
-  // console.log(isLoading);
-  // console.log(gameData);
-  // if (gameData === undefined) {
-  //   throw new Error("Data didn't fetch");
-  // }
+  const [GameDatas, setGameDatas] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    async function fetchData() {
+      API.get("/sales/").then((res) => {
+        if (!isLoaded) {
+          setGameDatas(res.data.data);
+        }
+        console.log(GameDatas);
+        setIsLoaded(true);
+      });
+    }
+    fetchData();
+  }, [GameDatas]);
   return (
     <div
       className="grid grid-cols-1 gap-10 mt-10
@@ -16,16 +23,20 @@ const SalePage = () => {
     xl:grid-cols-3 xl:h-20
     "
     >
-      {isLoading ? (
+      {!isLoaded ? (
         <p>Loading...</p>
       ) : (
-        <SaleComponent
-          imageUrl={gameData.header_image}
-          name={gameData.name}
-          discount={gameData.price_overview.discount_percent}
-          price={gameData.price_overview.initial_formatted}
-          salePrice={gameData.price_overview.final_formatted}
-        />
+        GameDatas.map((item) => {
+          return (
+            <SaleComponent
+              imageUrl={item.header_image}
+              name={item.name}
+              discount={item.discount_percentage}
+              price={800}
+              salePrice={600}
+            />
+          );
+        })
       )}
     </div>
   );

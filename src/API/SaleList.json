@@ -1,0 +1,805 @@
+{
+  "message": "Successfully",
+  "data": [
+    {
+      "appid": 457210,
+      "name": "SEUM: Speedrunners from Hell",
+      "discount_percentage": "-88%",
+      "rating": "89.98%",
+      "start": 1619975117,
+      "end": 1620147600
+    },
+    {
+      "appid": 274940,
+      "name": "Depth",
+      "discount_percentage": "-65%",
+      "rating": "86.00%",
+      "start": 1619717007,
+      "end": 1620061200
+    },
+    {
+      "appid": 503940,
+      "name": "Railway Empire",
+      "discount_percentage": "-67%",
+      "rating": "80.00%",
+      "start": 1619543120,
+      "end": 1620061200
+    },
+    {
+      "appid": 621060,
+      "name": "PC Building Simulator",
+      "discount_percentage": "-60%",
+      "rating": "92.27%",
+      "start": 1619716568,
+      "end": 1620061200
+    },
+    {
+      "appid": 1190460,
+      "name": "DEATH STRANDING",
+      "discount_percentage": "-60%",
+      "rating": "92.09%",
+      "start": 1619197583,
+      "end": 1620324000
+    },
+    {
+      "appid": 502800,
+      "name": "SENRAN KAGURA ESTIVAL VERSUS",
+      "discount_percentage": "-60%",
+      "rating": "91.51%",
+      "start": 1619716623,
+      "end": 1620324000
+    },
+    {
+      "appid": 402620,
+      "name": "Kindred Spirits on the Roof",
+      "discount_percentage": "-65%",
+      "rating": "90.92%",
+      "start": 1619716251,
+      "end": 1620324000
+    },
+    {
+      "appid": 429660,
+      "name": "Tales of Berseria™",
+      "discount_percentage": "-85%",
+      "rating": "90.29%",
+      "start": 1619543267,
+      "end": 1620324000
+    },
+    {
+      "appid": 1047440,
+      "name": "DATE A LIVE: Rio Reincarnation",
+      "discount_percentage": "-60%",
+      "rating": "89.40%",
+      "start": 1619716327,
+      "end": 1620324000
+    },
+    {
+      "appid": 1042550,
+      "name": "Digimon Story Cyber Sleuth: Complete Edition",
+      "discount_percentage": "-70%",
+      "rating": "89.36%",
+      "start": 1619716915,
+      "end": 1620324000
+    },
+    {
+      "appid": 349040,
+      "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+      "discount_percentage": "-77%",
+      "rating": "88.25%",
+      "start": 1619716481,
+      "end": 1620324000
+    },
+    {
+      "appid": 1089090,
+      "name": "ONE PIECE: PIRATE WARRIORS 4",
+      "discount_percentage": "-60%",
+      "rating": "87.85%",
+      "start": 1619716638,
+      "end": 1620324000
+    },
+    {
+      "appid": 678950,
+      "name": "DRAGON BALL FighterZ",
+      "discount_percentage": "-85%",
+      "rating": "87.77%",
+      "start": 1619716903,
+      "end": 1620324000
+    },
+    {
+      "appid": 234670,
+      "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 3 Full Burst HD",
+      "discount_percentage": "-70%",
+      "rating": "87.72%",
+      "start": 1619751305,
+      "end": 1620324000
+    },
+    {
+      "appid": 889510,
+      "name": "SENRAN KAGURA Burst Re:Newal",
+      "discount_percentage": "-60%",
+      "rating": "87.41%",
+      "start": 1619716535,
+      "end": 1620324000
+    },
+    {
+      "appid": 1075980,
+      "name": "NinNinDays",
+      "discount_percentage": "-60%",
+      "rating": "87.29%",
+      "start": 1619716211,
+      "end": 1620324000
+    },
+    {
+      "appid": 1031510,
+      "name": "SUPER ROBOT WARS X",
+      "discount_percentage": "-60%",
+      "rating": "86.91%",
+      "start": 1619717632,
+      "end": 1620324000
+    },
+    {
+      "appid": 678960,
+      "name": "CODE VEIN",
+      "discount_percentage": "-67%",
+      "rating": "86.83%",
+      "start": 1619716543,
+      "end": 1620324000
+    },
+    {
+      "appid": 1031500,
+      "name": "SUPER ROBOT WARS V",
+      "discount_percentage": "-60%",
+      "rating": "85.62%",
+      "start": 1619716313,
+      "end": 1620324000
+    },
+    {
+      "appid": 559650,
+      "name": "Witch It",
+      "discount_percentage": "-60%",
+      "rating": "85.41%",
+      "start": 1619716344,
+      "end": 1620061200
+    },
+    {
+      "appid": 790820,
+      "name": "Valkyria Chronicles 4 Complete Edition",
+      "discount_percentage": "-70%",
+      "rating": "85.20%",
+      "start": 1619716453,
+      "end": 1620324000
+    },
+    {
+      "appid": 842910,
+      "name": "The MISSING: J.J. Macfield and the Island of Memories",
+      "discount_percentage": "-80%",
+      "rating": "84.92%",
+      "start": 1619716385,
+      "end": 1620324000
+    },
+    {
+      "appid": 1058450,
+      "name": "MY HERO ONE'S JUSTICE 2",
+      "discount_percentage": "-60%",
+      "rating": "84.70%",
+      "start": 1619716653,
+      "end": 1620324000
+    },
+    {
+      "appid": 632350,
+      "name": "Cyberdimension Neptunia: 4 Goddesses Online",
+      "discount_percentage": "-65%",
+      "rating": "84.53%",
+      "start": 1619716423,
+      "end": 1620324000
+    },
+    {
+      "appid": 525480,
+      "name": ".hack//G.U. Last Recode",
+      "discount_percentage": "-85%",
+      "rating": "83.22%",
+      "start": 1619716536,
+      "end": 1620324000
+    },
+    {
+      "appid": 543870,
+      "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 2",
+      "discount_percentage": "-70%",
+      "rating": "83.22%",
+      "start": 1619751308,
+      "end": 1620324000
+    },
+    {
+      "appid": 502500,
+      "name": "ACE COMBAT™ 7: SKIES UNKNOWN",
+      "discount_percentage": "-75%",
+      "rating": "83.19%",
+      "start": 1619543120,
+      "end": 1620324000
+    },
+    {
+      "appid": 687260,
+      "name": "Tokyo Dark",
+      "discount_percentage": "-75%",
+      "rating": "82.68%",
+      "start": 1619716631,
+      "end": 1620324000
+    },
+    {
+      "appid": 245280,
+      "name": "ENSLAVED™: Odyssey to the West™ Premium Edition",
+      "discount_percentage": "-85%",
+      "rating": "82.39%",
+      "start": 1619716460,
+      "end": 1620324000
+    },
+    {
+      "appid": 735580,
+      "name": "11-11 Memories Retold",
+      "discount_percentage": "-85%",
+      "rating": "82.35%",
+      "start": 1619716083,
+      "end": 1620324000
+    },
+    {
+      "appid": 389730,
+      "name": "TEKKEN 7",
+      "discount_percentage": "-85%",
+      "rating": "82.16%",
+      "start": 1619716489,
+      "end": 1620324000
+    },
+    {
+      "appid": 798510,
+      "name": "SUPER DRAGON BALL HEROES WORLD MISSION",
+      "discount_percentage": "-85%",
+      "rating": "81.83%",
+      "start": 1619716331,
+      "end": 1620324000
+    },
+    {
+      "appid": 591370,
+      "name": "Production Line : Car factory simulation",
+      "discount_percentage": "-70%",
+      "rating": "81.51%",
+      "start": 1618852258,
+      "end": 1620061200
+    },
+    {
+      "appid": 738540,
+      "name": "Tales of Vesperia: Definitive Edition",
+      "discount_percentage": "-80%",
+      "rating": "81.45%",
+      "start": 1619543136,
+      "end": 1620324000
+    },
+    {
+      "appid": 272510,
+      "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM Revolution",
+      "discount_percentage": "-85%",
+      "rating": "81.14%",
+      "start": 1619716494,
+      "end": 1620324000
+    },
+    {
+      "appid": 351970,
+      "name": "Tales of Zestiria",
+      "discount_percentage": "-85%",
+      "rating": "80.82%",
+      "start": 1619543262,
+      "end": 1620324000
+    },
+    {
+      "appid": 965230,
+      "name": "DORAEMON STORY OF SEASONS",
+      "discount_percentage": "-60%",
+      "rating": "80.74%",
+      "start": 1619717078,
+      "end": 1620324000
+    },
+    {
+      "appid": 633230,
+      "name": "NARUTO TO BORUTO: SHINOBI STRIKER",
+      "discount_percentage": "-85%",
+      "rating": "80.55%",
+      "start": 1619716640,
+      "end": 1620324000
+    },
+    {
+      "appid": 420110,
+      "name": "NEKOPARA Vol. 2",
+      "discount_percentage": "-60%",
+      "rating": "94.40%",
+      "start": 1619716301,
+      "end": 1620324000
+    },
+    {
+      "appid": 418240,
+      "name": "Shadow Tactics: Blades of the Shogun",
+      "discount_percentage": "-90%",
+      "rating": "94.00%",
+      "start": 1619716492,
+      "end": 1620061200
+    },
+    {
+      "appid": 32440,
+      "name": "LEGO® Star Wars™ - The Complete Saga",
+      "discount_percentage": "-75%",
+      "rating": "93.56%",
+      "start": 1619716448,
+      "end": 1620324000
+    },
+    {
+      "appid": 333600,
+      "name": "NEKOPARA Vol. 1",
+      "discount_percentage": "-60%",
+      "rating": "93.43%",
+      "start": 1619716515,
+      "end": 1620324000
+    },
+    {
+      "appid": 70400,
+      "name": "Recettear: An Item Shop's Tale",
+      "discount_percentage": "-80%",
+      "rating": "92.97%",
+      "start": 1619716532,
+      "end": 1620324000
+    },
+    {
+      "appid": 348550,
+      "name": "GUILTY GEAR XX ACCENT CORE PLUS R",
+      "discount_percentage": "-80%",
+      "rating": "92.42%",
+      "start": 1619716280,
+      "end": 1620324000
+    },
+    {
+      "appid": 236450,
+      "name": "PAC-MAN™ Championship Edition DX+",
+      "discount_percentage": "-75%",
+      "rating": "92.31%",
+      "start": 1619716665,
+      "end": 1620324000
+    },
+    {
+      "appid": 373770,
+      "name": "LiEat",
+      "discount_percentage": "-60%",
+      "rating": "92.29%",
+      "start": 1619716331,
+      "end": 1620324000
+    },
+    {
+      "appid": 351920,
+      "name": "Crazy Machines 3",
+      "discount_percentage": "-90%",
+      "rating": "92.27%",
+      "start": 1619716094,
+      "end": 1620061200
+    },
+    {
+      "appid": 638970,
+      "name": "Yakuza 0",
+      "discount_percentage": "-75%",
+      "rating": "92.21%",
+      "start": 1619716409,
+      "end": 1620324000
+    },
+    {
+      "appid": 1058020,
+      "name": "STAR WARS™ Battlefront (Classic, 2004)",
+      "discount_percentage": "-60%",
+      "rating": "92.18%",
+      "start": 1619716326,
+      "end": 1620324000
+    },
+    {
+      "appid": 385800,
+      "name": "NEKOPARA Vol. 0",
+      "discount_percentage": "-60%",
+      "rating": "91.82%",
+      "start": 1619716474,
+      "end": 1620324000
+    },
+    {
+      "appid": 212480,
+      "name": "Sonic & All-Stars Racing Transformed Collection",
+      "discount_percentage": "-75%",
+      "rating": "91.70%",
+      "start": 1619716413,
+      "end": 1620324000
+    },
+    {
+      "appid": 743390,
+      "name": "DISTRAINT 2",
+      "discount_percentage": "-70%",
+      "rating": "91.63%",
+      "start": 1619629647,
+      "end": 1620842400
+    },
+    {
+      "appid": 220440,
+      "name": "DmC: Devil May Cry",
+      "discount_percentage": "-75%",
+      "rating": "91.58%",
+      "start": 1619716461,
+      "end": 1620324000
+    },
+    {
+      "appid": 424840,
+      "name": "Little Nightmares",
+      "discount_percentage": "-80%",
+      "rating": "91.47%",
+      "start": 1619716661,
+      "end": 1620324000
+    },
+    {
+      "appid": 377860,
+      "name": "Mushihimesama",
+      "discount_percentage": "-65%",
+      "rating": "91.20%",
+      "start": 1619717654,
+      "end": 1620324000
+    },
+    {
+      "appid": 701930,
+      "name": "Short Stories Collection of Class Tangerine",
+      "discount_percentage": "-60%",
+      "rating": "91.04%",
+      "start": 1619716425,
+      "end": 1620324000
+    },
+    {
+      "appid": 851850,
+      "name": "DRAGON BALL Z: KAKAROT",
+      "discount_percentage": "-60%",
+      "rating": "91.02%",
+      "start": 1619716669,
+      "end": 1620324000
+    },
+    {
+      "appid": 220700,
+      "name": "RPG Maker VX Ace",
+      "discount_percentage": "-85%",
+      "rating": "90.79%",
+      "start": 1619716283,
+      "end": 1620324000
+    },
+    {
+      "appid": 868520,
+      "name": "killer7",
+      "discount_percentage": "-60%",
+      "rating": "90.79%",
+      "start": 1619716164,
+      "end": 1620324000
+    },
+    {
+      "appid": 584400,
+      "name": "Sonic Mania",
+      "discount_percentage": "-75%",
+      "rating": "90.77%",
+      "start": 1619716366,
+      "end": 1620324000
+    },
+    {
+      "appid": 266210,
+      "name": "One Way Heroics",
+      "discount_percentage": "-70%",
+      "rating": "90.71%",
+      "start": 1619716218,
+      "end": 1620324000
+    },
+    {
+      "appid": 520440,
+      "name": "GUILTY GEAR Xrd -REVELATOR-",
+      "discount_percentage": "-80%",
+      "rating": "90.49%",
+      "start": 1619716079,
+      "end": 1620324000
+    },
+    {
+      "appid": 207350,
+      "name": "Ys Origin",
+      "discount_percentage": "-75%",
+      "rating": "90.36%",
+      "start": 1619716372,
+      "end": 1620324000
+    },
+    {
+      "appid": 1069740,
+      "name": "Seen",
+      "discount_percentage": "-75%",
+      "rating": "89.92%",
+      "start": 1619521508,
+      "end": 1620756000
+    },
+    {
+      "appid": 32510,
+      "name": "LEGO® Star Wars™ III - The Clone Wars™",
+      "discount_percentage": "-75%",
+      "rating": "89.67%",
+      "start": 1619716120,
+      "end": 1620324000
+    },
+    {
+      "appid": 951000,
+      "name": "Trap Shrine",
+      "discount_percentage": "-60%",
+      "rating": "89.62%",
+      "start": 1619716366,
+      "end": 1620324000
+    },
+    {
+      "appid": 460790,
+      "name": "Bayonetta",
+      "discount_percentage": "-75%",
+      "rating": "89.57%",
+      "start": 1619716587,
+      "end": 1620324000
+    },
+    {
+      "appid": 464450,
+      "name": "DoDonPachi Resurrection",
+      "discount_percentage": "-65%",
+      "rating": "89.57%",
+      "start": 1619716128,
+      "end": 1620324000
+    },
+    {
+      "appid": 234270,
+      "name": "Ken Follett's The Pillars of the Earth",
+      "discount_percentage": "-80%",
+      "rating": "89.47%",
+      "start": 1619197515,
+      "end": 1620061200
+    },
+    {
+      "appid": 970570,
+      "name": "CHAOS;CHILD",
+      "discount_percentage": "-60%",
+      "rating": "89.36%",
+      "start": 1619716411,
+      "end": 1620324000
+    },
+    {
+      "appid": 207320,
+      "name": "Ys: The Oath in Felghana",
+      "discount_percentage": "-70%",
+      "rating": "89.02%",
+      "start": 1619716520,
+      "end": 1620324000
+    },
+    {
+      "appid": 848350,
+      "name": "Katamari Damacy REROLL",
+      "discount_percentage": "-67%",
+      "rating": "88.94%",
+      "start": 1619629642,
+      "end": 1620324000
+    },
+    {
+      "appid": 287700,
+      "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+      "discount_percentage": "-75%",
+      "rating": "88.93%",
+      "start": 1619716230,
+      "end": 1620324000
+    },
+    {
+      "appid": 761600,
+      "name": "Onimusha: Warlords",
+      "discount_percentage": "-60%",
+      "rating": "88.70%",
+      "start": 1619716669,
+      "end": 1620324000
+    },
+    {
+      "appid": 326480,
+      "name": "If My Heart Had Wings",
+      "discount_percentage": "-80%",
+      "rating": "88.69%",
+      "start": 1619716464,
+      "end": 1620324000
+    },
+    {
+      "appid": 948740,
+      "name": "AI: The Somnium Files",
+      "discount_percentage": "-60%",
+      "rating": "88.44%",
+      "start": 1619716451,
+      "end": 1620324000
+    },
+    {
+      "appid": 294860,
+      "name": "Valkyria Chronicles™",
+      "discount_percentage": "-66%",
+      "rating": "88.34%",
+      "start": 1619716202,
+      "end": 1620324000
+    },
+    {
+      "appid": 690640,
+      "name": "Trine 4: The Nightmare Prince",
+      "discount_percentage": "-75%",
+      "rating": "88.21%",
+      "start": 1619543261,
+      "end": 1620756000
+    },
+    {
+      "appid": 329050,
+      "name": "Devil May Cry 4 Special Edition",
+      "discount_percentage": "-60%",
+      "rating": "88.09%",
+      "start": 1619716564,
+      "end": 1620324000
+    },
+    {
+      "appid": 1237950,
+      "name": "STAR WARS™ Battlefront™ II",
+      "discount_percentage": "-70%",
+      "rating": "87.82%",
+      "start": 1619716496,
+      "end": 1620324000
+    },
+    {
+      "appid": 367500,
+      "name": "Dragon's Dogma: Dark Arisen",
+      "discount_percentage": "-70%",
+      "rating": "87.73%",
+      "start": 1619717110,
+      "end": 1620324000
+    },
+    {
+      "appid": 320760,
+      "name": "Tokyo School Life",
+      "discount_percentage": "-60%",
+      "rating": "87.56%",
+      "start": 1619716351,
+      "end": 1620324000
+    },
+    {
+      "appid": 514310,
+      "name": "SENRAN KAGURA Bon Appétit! - Full Course",
+      "discount_percentage": "-75%",
+      "rating": "87.42%",
+      "start": 1619716182,
+      "end": 1620324000
+    },
+    {
+      "appid": 220740,
+      "name": "Chaos on Deponia",
+      "discount_percentage": "-90%",
+      "rating": "87.24%",
+      "start": 1619716101,
+      "end": 1620061200
+    },
+    {
+      "appid": 235900,
+      "name": "RPG Maker XP",
+      "discount_percentage": "-90%",
+      "rating": "87.17%",
+      "start": 1619716544,
+      "end": 1620324000
+    },
+    {
+      "appid": 648580,
+      "name": "428: Shibuya Scramble",
+      "discount_percentage": "-80%",
+      "rating": "86.76%",
+      "start": 1619716090,
+      "end": 1620324000
+    },
+    {
+      "appid": 45760,
+      "name": "Ultra Street Fighter® IV",
+      "discount_percentage": "-75%",
+      "rating": "86.60%",
+      "start": 1619716528,
+      "end": 1620324000
+    },
+    {
+      "appid": 200940,
+      "name": "Sonic CD",
+      "discount_percentage": "-75%",
+      "rating": "86.46%",
+      "start": 1619716344,
+      "end": 1620324000
+    },
+    {
+      "appid": 357190,
+      "name": "ULTIMATE MARVEL VS. CAPCOM 3",
+      "discount_percentage": "-70%",
+      "rating": "86.45%",
+      "start": 1619716559,
+      "end": 1620324000
+    },
+    {
+      "appid": 495280,
+      "name": "Disgaea 2 PC",
+      "discount_percentage": "-80%",
+      "rating": "86.16%",
+      "start": 1619717016,
+      "end": 1620324000
+    },
+    {
+      "appid": 230820,
+      "name": "The Night of the Rabbit",
+      "discount_percentage": "-90%",
+      "rating": "86.14%",
+      "start": 1618506316,
+      "end": 1620061200
+    },
+    {
+      "appid": 219910,
+      "name": "Edna & Harvey: Harvey's New Eyes",
+      "discount_percentage": "-90%",
+      "rating": "86.11%",
+      "start": 1619716453,
+      "end": 1620061200
+    },
+    {
+      "appid": 71250,
+      "name": "Sonic Adventure DX",
+      "discount_percentage": "-85%",
+      "rating": "86.08%",
+      "start": 1619717062,
+      "end": 1620324000
+    },
+    {
+      "appid": 214340,
+      "name": "Deponia",
+      "discount_percentage": "-90%",
+      "rating": "86.07%",
+      "start": 1619716063,
+      "end": 1620061200
+    },
+    {
+      "appid": 227600,
+      "name": "Castle of Illusion",
+      "discount_percentage": "-75%",
+      "rating": "86.07%",
+      "start": 1619716653,
+      "end": 1620324000
+    },
+    {
+      "appid": 452510,
+      "name": "UNDER NIGHT IN-BIRTH Exe:Late",
+      "discount_percentage": "-80%",
+      "rating": "86.00%",
+      "start": 1619716266,
+      "end": 1620324000
+    },
+    {
+      "appid": 312540,
+      "name": "Ys VI: The Ark of Napishtim",
+      "discount_percentage": "-75%",
+      "rating": "85.89%",
+      "start": 1619716112,
+      "end": 1620324000
+    },
+    {
+      "appid": 460810,
+      "name": "Vanquish",
+      "discount_percentage": "-75%",
+      "rating": "85.76%",
+      "start": 1619717601,
+      "end": 1620324000
+    },
+    {
+      "appid": 240970,
+      "name": "Half Minute Hero: The Second Coming",
+      "discount_percentage": "-75%",
+      "rating": "85.64%",
+      "start": 1619716675,
+      "end": 1620324000
+    },
+    {
+      "appid": 243200,
+      "name": "The Dark Eye: Memoria",
+      "discount_percentage": "-90%",
+      "rating": "85.58%",
+      "start": 1619716573,
+      "end": 1620061200
+    }
+  ]
+}
