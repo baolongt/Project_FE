@@ -3,7 +3,7 @@ import "./GamePrices.css";
 
 const GamePrices = (props) => {
   const [priceOfCountries, setPriceOfCountries] = useState(
-    props.gamePrices
+    props.price_countries
   );
 
   const [status, setStatus] = useState({
@@ -15,14 +15,14 @@ const GamePrices = (props) => {
     sortConvertedStatus: 0,
   });
 
-  const highlightPercent = (string) => {
-    const length = string.length;
-    if (string.substr(length - 1) === "%") {
+  const highlightPercent = (content) => {
+    const length = content.length;
+    if (content.substr(length - 1) === "%") {
       return (
         <div>
-          <span>{string.substr(0, length - 5)}</span>
+          <span>{content.substr(0, length - 5)}</span>
           <span className="text-green-500">
-            {string.substr(length - 4, length - 1)}
+            {content.substr(length - 4, length - 1)}
           </span>
         </div>
       );
@@ -260,7 +260,7 @@ const GamePrices = (props) => {
                       src={`https://flagcdn.com/16x12/${
                         el.id === "uk" ? "gb" : el.id
                       }.png`}
-                      srcSet={`https://flagcdn.com/32x24/$${
+                      srcSet={`https://flagcdn.com/32x24/${
                         el.id === "uk" ? "gb" : el.id
                       }.png 2x, https://flagcdn.com/48x36/${
                         el.id === "uk" ? "gb" : el.id
@@ -270,6 +270,7 @@ const GamePrices = (props) => {
                       alt={el.id}
                       className="inline-block mr-1 md:mr-2 md:w-6"
                     ></img>
+
                     {el.name}
                   </td>
                   <td className="border-b text-xs text-center hidden sm:table-cell sm:text-base sm:pb-1 md:text-lg">
