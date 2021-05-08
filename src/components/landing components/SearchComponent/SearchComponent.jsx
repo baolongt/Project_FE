@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import SalePage from "./deal components/SalePage";
+import SalePage from "../DealComponents/SalePage";
 const SearchComponent = () => {
   return (
     <>

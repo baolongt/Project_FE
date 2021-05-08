@@ -1,0 +1,80 @@
+{
+  "message": "Successful search",
+  "data": [
+    {
+      "appid": 1477540,
+      "name": "PUBG-Survivor Pass : Breakthrough",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1477540/header.jpg"
+    },
+    {
+      "appid": 1113910,
+      "name": "Survivor Pass 4: Aftermath",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1113910/header.jpg"
+    },
+    {
+      "appid": 1273370,
+      "name": "Survivor Pass: Cold Front",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1273370/header.jpg"
+    },
+    {
+      "appid": 1145250,
+      "name": "Survivor Pass: Badlands",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1145250/header.jpg"
+    },
+    {
+      "appid": 1349770,
+      "name": "Survivor Pass: Payback",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1349770/header.jpg"
+    },
+    {
+      "appid": 1046180,
+      "name": "Survivor Pass 3: Wild Card",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1046180/header.jpg"
+    },
+    {
+      "appid": 1222520,
+      "name": "Survivor Pass: Shakedown",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1222520/header.jpg"
+    },
+    {
+      "appid": 1414050,
+      "name": "Survivor Pass: Highlands",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1414050/header.jpg"
+    },
+    {
+      "appid": 990650,
+      "name": "Survivor Pass: Vikendi",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/990650/header.jpg"
+    },
+    {
+      "appid": 330570,
+      "name": "Noct",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/330570/header.jpg"
+    },
+    {
+      "appid": 347090,
+      "name": "Dying Light - Ultimate Survivor Bundle",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/347090/header.jpg"
+    },
+    {
+      "appid": 766370,
+      "name": "Dying Light: Bad Blood",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/766370/header.jpg"
+    },
+    {
+      "appid": 595260,
+      "name": "Heat Guardian: Re-Frozen Edition",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/595260/header.jpg"
+    },
+    {
+      "appid": 925570,
+      "name": "The Uncertain: Light At The End",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/925570/header.jpg"
+    },
+    {
+      "appid": 647530,
+      "name": "Prime Arena",
+      "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/647530/header.jpg"
+    }
+  ]
+}
