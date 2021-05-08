@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
 import SaleComponent from "./SaleComponent";
 import API from "../../../API/HTTP";
+// import SampleData from "./SaleList.json";
 const SalePage = () => {
-  const [GameDatas, setGameDatas] = useState([]);
+  const [GameData, setGameData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     async function fetchData() {
       API.get("/sales/").then((res) => {
         if (!isLoaded) {
-          setGameDatas(res.data.data);
+          setGameData(res.data.data);
+          setIsLoaded(true);
         }
-        console.log(GameDatas);
-        setIsLoaded(true);
       });
     }
     fetchData();
-  }, [GameDatas]);
+  }, [GameData, isLoaded]);
   return (
     <div
       className="grid grid-cols-1 gap-10 mt-10
@@ -26,14 +27,19 @@ const SalePage = () => {
       {!isLoaded ? (
         <p>Loading...</p>
       ) : (
-        GameDatas.map((item) => {
+        GameData.map((item, index) => {
           return (
             <SaleComponent
+              key={index}
               imageUrl={item.header_image}
               name={item.name}
               discount={item.discount_percentage}
-              price={800}
-              salePrice={600}
+              price={
+                parseInt(item.current_price) +
+                parseInt(item.current_price) *
+                  (1 - -parseInt(item.discount_percentage) / 100)
+              }
+              salePrice={parseInt(item.current_price)}
             />
           );
         })
