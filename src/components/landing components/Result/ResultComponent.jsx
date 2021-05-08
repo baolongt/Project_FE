@@ -3,7 +3,7 @@ import React from "react";
 const ResultComponent = (props) => {
   return (
     <a
-      href={props.id}
+      href={"/info/" + props.id}
       className="mt-1 grid grid-cols-10 hover:bg-gray-400 cursor-pointer"
     >
       <img src={props.imageUrl} alt="image" className="col-span-2 scale-100" />
