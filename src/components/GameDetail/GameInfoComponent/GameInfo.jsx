@@ -3,11 +3,15 @@ import logo from "./SteamLogo.png";
 
 const GameInfo = (props) => {
   const information = props.data;
-  const aboutTheGame = information.short_description
-    .split("<br />")
-    .join("")
-    .split("&quot;")
-    .join("");
+
+  let aboutTheGame = "";
+  if (information) {
+    aboutTheGame = information.short_description
+      .split("<br />")
+      .join("")
+      .split("&quot;")
+      .join("");
+  }
 
   const gamePlatforms = [];
   if (information.platforms.windows) {
@@ -86,11 +90,15 @@ const GameInfo = (props) => {
                   {information.recommendations.total}
                 </td>
               </tr>
-              <a href={information.link_steam}>
-                <img className="mt-2 -ml-2 sm:mt-1 sm:-ml-5 md:mt-0 md:-ml-6 xl:-ml-10" src={logo} alt="SteamLogo" />
-              </a>
             </tbody>
           </table>
+          <a href={information.link_steam}>
+            <img
+              className="mt-2 -ml-2 w-8/12 sm:mt-1 sm:-ml-5 md:mt-0 md:-ml-6 xl:-ml-10"
+              src={logo}
+              alt="SteamLogo"
+            />
+          </a>
         </div>
       </div>
     </div>

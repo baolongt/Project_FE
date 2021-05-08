@@ -12,8 +12,8 @@ function App() {
       <DataProvider>
         <BrowserRouter>
           <Route path="/" exact component={SearchComponent} />
-          <Route path="/info" exact component={Game} />
           <Route path="/top" exact component={TopGames} />
+          <Route path="/info/:id" children={<Game />} />
         </BrowserRouter>
       </DataProvider>
     </>
