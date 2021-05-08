@@ -28,20 +28,11 @@ const SaleComponent = (props) => {
             2xl:text-base 2xl:mt-2
           "
           >
-            {props.price}
+            {new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND"
+            }).format(props.price)}
           </div>
-          {/* <div
-            className="sale col-span-2 bg-sale-green text-center 
-          -mt-2 mb-3 mx-1 text-sm font-bold 
-          sm:text-base sm:mx-6
-          md:mx-1
-          lg:mx-3
-          xl:mx-4
-          2xl:mx-6 2xl:-mt-5 2xl:mb-4 2xl:text-xl
-          "
-          >
-            -{props.discount}%
-          </div> */}
           <div
             className="col-span-2 text-center font-bold text-sm
           "
@@ -54,7 +45,7 @@ const SaleComponent = (props) => {
             xl:h-7 xl:text-xl xl:-mt-5 xl:ml-5
             "
             >
-              -{props.discount}%
+              {props.discount}
             </p>
           </div>
           <div
@@ -63,7 +54,10 @@ const SaleComponent = (props) => {
             2xl:text-xl 2xl:-mt-2
           "
           >
-            {props.salePrice}
+            {new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND"
+            }).format(props.salePrice)}
           </div>
         </div>
       </div>
