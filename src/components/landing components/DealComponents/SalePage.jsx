@@ -31,6 +31,7 @@ const SalePage = () => {
           return (
             <SaleComponent
               key={index}
+              id={item.appid}
               imageUrl={item.header_image}
               name={item.name}
               discount={item.discount_percentage}
