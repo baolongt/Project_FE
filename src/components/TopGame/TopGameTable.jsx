@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import defaultLogo from "../../images/DefaultLogo.jpg"
 
 const TopGameTable = (props) => {
@@ -87,7 +87,7 @@ const TopGameTable = (props) => {
                     <td className="text-center border-b">{el.peak_today}</td>
                   </>
                 )}
-                {title === "Popular Releases" && (
+                {title === "Trending Games" && (
                   <>
                     <td className="text-center border-b"></td>
                     <td className="text-center text-green-500 border-b">
@@ -95,7 +95,7 @@ const TopGameTable = (props) => {
                     </td>
                   </>
                 )}
-                {title === "Trending Games" && (
+                {title === "Popular Releases" && (
                   <>
                     <td className="text-center text-green-500 border-b">
                       {el.peak_today}
@@ -106,7 +106,7 @@ const TopGameTable = (props) => {
                 {title === "Hot Releases" && (
                   <>
                     <td className="text-center text-green-500 border-b">
-                      {el.peak_today}
+                      {el.rating}
                     </td>
                     <td className="text-center border-b">{el.price}</td>
                   </>

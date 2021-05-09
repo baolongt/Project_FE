@@ -3,9 +3,16 @@ import { Redirect } from "react-router-dom";
 
 const Header = () => {
   const [isTurnBack, setIsTurnBack] = useState(false);
+  const [location, setLocation] = useState("");
 
   const turnBackToHomePage = () => {
     setIsTurnBack(true);
+    setLocation("");
+  };
+
+  const goToTopGames = () => {
+    setIsTurnBack(true);
+    setLocation("/top");
   };
 
   return (
@@ -14,7 +21,7 @@ const Header = () => {
         <Redirect
           push
           to={{
-            pathname: "/",
+            pathname: `${location}`,
           }}
         />
       )}
@@ -35,6 +42,16 @@ const Header = () => {
           <span className="font-semibold text-3xl tracking-tight">
             Steam Tracker
           </span>
+        </div>
+        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div className="text-sm lg:flex-grow">
+            <p
+              className="cursor-pointer	 text-2xl block mt-4 ml-2 md:ml-6 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              onClick={goToTopGames}
+            >
+              TopGames
+            </p>
+          </div>
         </div>
       </nav>
     </React.Fragment>

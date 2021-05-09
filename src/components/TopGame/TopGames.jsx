@@ -1,7 +1,8 @@
 import TopGameTable from "./TopGameTable";
-import { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import API from "../../API/HTTP";
+import Header from "../../UI/Header";
 
 const TopGames = () => {
   const [data, setData] = useState([]);
@@ -22,16 +23,17 @@ const TopGames = () => {
   useEffect(() => {
     async function fecthData() {
       try {
-        const timer = setTimeout(() => {
-          setIsFailLoaded(true);
-        }, 10000);
         const respone = await API.get("/top-game");
+        console.log(respone.status);
         setData(respone.data.data);
+        if (respone.status !== 200) {
+          setIsFailLoaded(true);
+        }
         setIsLoaded(true);
-        clearTimeout(timer);
       } catch (error) {
         console.error(error);
         setIsLoaded(false);
+        setIsFailLoaded(true);
       }
     }
     fecthData();
@@ -56,35 +58,38 @@ const TopGames = () => {
         />
       )}
       {isLoaded && (
-        <div className="grid grid-cols-12 md:mx-5 ">
-          <div className="col-span-12 lg:col-span-6">
-            <TopGameTable
-              type="Most Played Games"
-              data={data.most_played_games}
-              redirectToGameDetail={redirectToGameDetail}
-            />
+        <React.Fragment>
+          <Header />
+          <div className="grid grid-cols-12 md:mx-5 ">
+            <div className="col-span-12 lg:col-span-6">
+              <TopGameTable
+                type="Most Played Games"
+                data={data.most_played_games}
+                redirectToGameDetail={redirectToGameDetail}
+              />
+            </div>
+            <div className="col-span-12 lg:col-span-6">
+              <TopGameTable
+                type="Trending Games"
+                data={data.trending_games}
+                redirectToGameDetail={redirectToGameDetail}
+              />
+            </div>
+            <div className="col-span-12 lg:col-span-6">
+              <TopGameTable
+                type="Popular Releases"
+                data={data.popular_releases}
+              />
+            </div>
+            <div className="col-span-12 lg:col-span-6">
+              <TopGameTable
+                type="Hot Releases"
+                data={data.hot_releases}
+                redirectToGameDetail={redirectToGameDetail}
+              />
+            </div>
           </div>
-          <div className="col-span-12 lg:col-span-6">
-            <TopGameTable
-              type="Trending Games"
-              data={data.trending_games}
-              redirectToGameDetail={redirectToGameDetail}
-            />
-          </div>
-          <div className="col-span-12 lg:col-span-6">
-            <TopGameTable
-              type="Popular Releases"
-              data={data.popular_releases}
-            />
-          </div>
-          <div className="col-span-12 lg:col-span-6">
-            <TopGameTable
-              type="Hot Releases"
-              data={data.hot_releases}
-              redirectToGameDetail={redirectToGameDetail}
-            />
-          </div>
-        </div>
+        </React.Fragment>
       )}
     </Fragment>
   );
