@@ -4,6 +4,7 @@ import API from "../../API/HTTP";
 import GameInfo from "./GameInfoComponent/GameInfo";
 import GamePrices from "./GamePricesComponent/GamePrices";
 import { Redirect } from "react-router-dom";
+import Header from "../../UI/Header";
 
 const Game = () => {
   let { id } = useParams();
@@ -14,15 +15,16 @@ const Game = () => {
   useEffect(() => {
     async function fecthData() {
       try {
-        const timer = setTimeout(() => {
-          setIsFailLoaded(true);
-        }, 10000);
         const respone = await API.get(`/app-ids/${id}`);
-        setData(respone.data.data);
-        setIsLoaded(true);
-        clearTimeout(timer);
+        if (respone.status !== 200) {
+          setIsFailLoaded(true);
+        } else {
+          setData(respone.data.data);
+          setIsLoaded(true);
+        }
       } catch (error) {
         console.error(error);
+        setIsFailLoaded(true);
         setIsLoaded(false);
       }
     }
@@ -38,6 +40,7 @@ const Game = () => {
           }}
         />
       )}
+      <Header/>
       {!isLoaded && <h1 className="text-center text-xl">Loading...</h1>}
       {isLoaded && <GameInfo data={data} />}
       {isLoaded && <GamePrices price_countries={data.price_countries} />}
