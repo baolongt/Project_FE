@@ -12,8 +12,7 @@ const SaleComponent = (props) => {
       <img className="w-full" src={props.imageUrl} alt={props.name} />
       <div
         className="w-full h-14 bg-black grid grid-cols-10 gap-1
-        2xl:h-16
-      "
+        2xl:h-16"
       >
         <p
           className="col-span-6 mt-2 ml-3 text-sm font-bold

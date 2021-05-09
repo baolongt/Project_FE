@@ -8,13 +8,11 @@ import DataProvider from "./API/DataProvider";
 
 function App() {
   return (
-    <DataProvider>
-      <BrowserRouter>
-        <Route path="/" exact component={SearchComponent} />
-        <Route path="/top" exact component={TopGames} />
-        <Route path="/info/:id" children={<Game />} />
-      </BrowserRouter>
-    </DataProvider>
+    <BrowserRouter>
+      <Route path="/" exact component={SearchComponent} />
+      <Route path="/top" exact component={TopGames} />
+      <Route path="/info/:id" children={<Game />} />
+    </BrowserRouter>
   );
 }
 

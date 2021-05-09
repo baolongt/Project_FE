@@ -3,11 +3,6 @@ import searchIcon from "../../resource/svg/search.svg";
 import "./Button.css";
 import API from "../../../API/HTTP";
 import ResultComponent from "../Result/ResultComponent";
-import { Redirect } from "react-router-dom";
-
-const handleSubmit = (searchValue) => {
-  return searchValue.length > 0 ? <Redirect to="/info" /> : "";
-};
 
 const SearchBar = () => {
   const [searchedData, setSearchedData] = useState([]);
@@ -59,13 +54,11 @@ const SearchBar = () => {
             onChange={(event) => {
               setSearchValue(event.target.value);
             }}
-            onSubmit={handleSubmit(searchValue)}
           />
           <div className="p-4">
             <button
               className="bg-yellow-400 text-white rounded-full p-2
            hover:bg-yellow-300 focus:outline-none w-12 h-12 flex items-center justify-center"
-              onClick={handleSubmit}
             >
               <img src={searchIcon} className="" alt="svg" />
             </button>
@@ -76,7 +69,7 @@ const SearchBar = () => {
         className={
           searchedData.length === 0
             ? "hidden "
-            : "visible bg-white -mt-9 mx-20 lg:mx-32 xl:mx-96"
+            : "visible bg-white -mt-9 mx-20 lg:mx-32 xl:mx-96 z-10 absolute"
         }
       >
         <div className="pt-1 pb-1 pr-1 z-1">
