@@ -11,11 +11,11 @@ npm install @craco/craco
 
 **Run Back-end**
 ```
-	npm run start:dev
+npm run start:dev
 ```
 **Run Project**
 ```
-	npm start
+npm start
 ```
 :copyright: Tran Bao Long [FaceBook](https://www.facebook.com/gn01n4rt)
 :copyright: Dao Huu Duc [FaceBook](https://www.facebook.com/daohuuduc.910)
