@@ -3,31 +3,37 @@ import searchIcon from "../../resource/svg/search.svg";
 import "./Button.css";
 import API from "../../../API/HTTP";
 import ResultComponent from "../Result/ResultComponent";
-import { Redirect } from "react-router-dom";
-
-const handleSubmit = (searchValue) => {
-  return searchValue.length > 0 ? <Redirect to="/info" /> : "";
-};
 
 const SearchBar = () => {
   const [searchedData, setSearchedData] = useState([]);
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    if (searchValue.length !== 0) {
+    if (searchValue.length === 0 && searchedData.length !== 0) {
+      setSearchedData([]);
+    }
+    if (searchValue.length === 0) {
+      return;
+    }
+    const getData = () => {
       API.get("/app-ids?query=" + searchValue)
         .then((res) => res.data)
         .then((data) => {
           setSearchedData(data.data);
         });
-    } else if (searchValue.length === 0 && searchedData.length !== 0) {
-      setSearchedData([]);
-    }
+    };
+    const timer = setTimeout(() => {
+      getData();
+    }, 500);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [searchValue]);
+
   useEffect(() => {}, [searchedData]);
 
   return (
-    <div>
+    <>
       <div
         className="p-8
     "
@@ -48,13 +54,11 @@ const SearchBar = () => {
             onChange={(event) => {
               setSearchValue(event.target.value);
             }}
-            onSubmit={handleSubmit(searchValue)}
           />
           <div className="p-4">
             <button
               className="bg-yellow-400 text-white rounded-full p-2
            hover:bg-yellow-300 focus:outline-none w-12 h-12 flex items-center justify-center"
-              onClick={handleSubmit}
             >
               <img src={searchIcon} className="" alt="svg" />
             </button>
@@ -65,10 +69,10 @@ const SearchBar = () => {
         className={
           searchedData.length === 0
             ? "hidden "
-            : "visible bg-white -mt-9 mx-20 lg:mx-32 xl:mx-96"
+            : "visible bg-white -mt-9 mx-20 lg:mx-32 xl:mx-96 z-10 absolute"
         }
       >
-        <div className="pt-1 pb-1 pr-1">
+        <div className="pt-1 pb-1 pr-1 z-1">
           {searchedData.map((data, index) => {
             return (
               <ResultComponent
@@ -83,7 +87,7 @@ const SearchBar = () => {
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
