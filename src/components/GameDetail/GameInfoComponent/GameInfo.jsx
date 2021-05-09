@@ -1,11 +1,11 @@
 import "./GameInfo.css";
-import logo from "./SteamLogo.png";
+import logo from "../../../images/SteamLogo.png"
 
 const GameInfo = (props) => {
   const information = props.data;
 
   let aboutTheGame = "";
-  if (information) {
+  if (information.short_description) {
     aboutTheGame = information.short_description
       .split("<br />")
       .join("")
@@ -14,14 +14,16 @@ const GameInfo = (props) => {
   }
 
   const gamePlatforms = [];
-  if (information.platforms.windows) {
-    gamePlatforms.push("Windows");
-  }
-  if (information.platforms.mac) {
-    gamePlatforms.push("Mac");
-  }
-  if (information.platforms.linux) {
-    gamePlatforms.push("Linux");
+  if (information.platforms) {
+    if (information.platforms.windows) {
+      gamePlatforms.push("Windows");
+    }
+    if (information.platforms.mac) {
+      gamePlatforms.push("Mac");
+    }
+    if (information.platforms.linux) {
+      gamePlatforms.push("Linux");
+    }
   }
 
   return (
@@ -79,7 +81,9 @@ const GameInfo = (props) => {
                   Release Date
                 </td>
                 <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
-                  {information.release_date.date}
+                  {information.release_date
+                    ? information.release_date.date
+                    : "none"}
                 </td>
               </tr>
               <tr>
@@ -87,7 +91,9 @@ const GameInfo = (props) => {
                   Recommend
                 </td>
                 <td className="w-screen font-bold text-xs pb-3 sm:pb-6 md:text-base lg:pb-12 xl:text-lg">
-                  {information.recommendations.total}
+                  {information.recommendations
+                    ? information.recommendations.total
+                    : "none"}
                 </td>
               </tr>
             </tbody>

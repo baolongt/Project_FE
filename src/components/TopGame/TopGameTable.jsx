@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import { Redirect } from "react-router-dom";
+import defaultLogo from "../../images/DefaultLogo.jpg"
 
 const TopGameTable = (props) => {
   const { data } = props;
-  const [redirectInfo, setRedirectInfo] = useState({
-    isRedirect: false,
-    location: "",
-  });
 
   let tableHeader = [];
   let title = "";
@@ -25,23 +21,9 @@ const TopGameTable = (props) => {
   }
   const length = title.length;
 
-  const redirectToGameDetail = async (appID) => {
-    setRedirectInfo({
-      isRedirect: true,
-      location: appID,
-    }); 
-  };
 
   return (
     <div>
-      {redirectInfo.isRedirect && (
-        <Redirect
-          push
-          to={{
-            pathname: `/info/${redirectInfo.location}`,
-          }}
-        />
-      )}
       <table className="table-auto border-collapse text-left my-8 mx-2 px-2 py-3 sm:px-5 sm:py-4 md:mx-2 lg:mx-2 xl:mx-3 2xl:mx-24">
         <thead>
           <tr>
@@ -67,109 +49,67 @@ const TopGameTable = (props) => {
           {data.map((el, index) => {
             return (
               <tr key={`row${index}`} className="hover:bg-gray-600">
+                <td className="border-b overflow-hidden truncate w-2 ">
+                  {el.header_image ? (
+                    <img
+                      src={el.header_image}
+                      alt="te"
+                      className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
+                      onClick={() => {
+                        return props.redirectToGameDetail(el.appid);
+                      }}
+                    />
+                  ) : (
+                    <img
+                      src={defaultLogo}
+                      alt="te"
+                      className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
+                      onClick={() => {
+                        return props.redirectToGameDetail(el.appid);
+                      }}
+                    />
+                  )}
+
+                  <span
+                    className="cursor-pointer hidden md:inline 2xl:text-lg"
+                    onClick={() => {
+                      return props.redirectToGameDetail(el.appid);
+                    }}
+                  >
+                    {el.name}
+                  </span>
+                </td>
                 {title === "Most Played Games" && (
-                  <React.Fragment>
-                    <td className="border-b overflow-hidden truncate w-2 ">
-                      <img
-                        src={el.header_image}
-                        alt="te"
-                        className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      />
-                      <span
-                        className="cursor-pointer hidden md:inline 2xl:text-lg"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      >
-                        {el.name}
-                      </span>
-                    </td>
+                  <>
                     <td className="text-center text-green-500 border-b">
                       {el.players_now}
                     </td>
                     <td className="text-center border-b">{el.peak_today}</td>
-                  </React.Fragment>
+                  </>
                 )}
-                {title === "Trending Games" && (
-                  <React.Fragment>
-                    <td className="border-b overflow-hidden truncate w-2">
-                      <img
-                        src={el.header_image}
-                        alt="te"
-                        className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      />
-                      <span
-                        className="cursor-pointer hidden md:inline 2xl:text-lg"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      >
-                        {el.name}
-                      </span>
-                    </td>
+                {title === "Popular Releases" && (
+                  <>
                     <td className="text-center border-b"></td>
                     <td className="text-center text-green-500 border-b">
                       {el.players_now}
                     </td>
-                  </React.Fragment>
+                  </>
                 )}
-                {title === "Popular Releases" && (
-                  <React.Fragment>
-                    <td className="border-b overflow-hidden truncate w-2">
-                      <img
-                        src={el.header_image}
-                        alt="te"
-                        className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      />
-                      <span
-                        className="cursor-pointer hidden md:inline 2xl:text-lg"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      >
-                        {el.name}
-                      </span>
-                    </td>
+                {title === "Trending Games" && (
+                  <>
                     <td className="text-center text-green-500 border-b">
                       {el.peak_today}
                     </td>
                     <td className="text-center border-b">{el.price}</td>
-                  </React.Fragment>
+                  </>
                 )}
                 {title === "Hot Releases" && (
-                  <React.Fragment>
-                    <td className="border-b overflow-hidden truncate w-2">
-                      <img
-                        src={el.header_image}
-                        alt="te"
-                        className="cursor-pointer inline-block h-12 mr-3 sm:w-7/12 md:w-3/12 2xl:w-3/12 2xl:h-14"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      />
-                      <span
-                        className="cursor-pointer hidden md:inline 2xl:text-lg"
-                        onClick={() => {
-                          return redirectToGameDetail(el.appid);
-                        }}
-                      >
-                        {el.name}
-                      </span>
-                    </td>
+                  <>
                     <td className="text-center text-green-500 border-b">
-                      {el.rating}
+                      {el.peak_today}
                     </td>
                     <td className="text-center border-b">{el.price}</td>
-                  </React.Fragment>
+                  </>
                 )}
               </tr>
             );

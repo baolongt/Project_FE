@@ -4,17 +4,18 @@ import SearchComponent from "./components/landing components/SearchComponent/Sea
 import { Route, BrowserRouter } from "react-router-dom";
 import Game from "./components/GameDetail/Game";
 import TopGames from "./components/TopGame/TopGames";
-import DataProvider from "./API/DataProvider";
+import ErrorPage from "./components/ErrorPage/ErrorPage"
+import Header from "./UI/Header";
 
 function App() {
   return (
-    <DataProvider>
-      <BrowserRouter>
-        <Route path="/" exact component={SearchComponent} />
-        <Route path="/top" exact component={TopGames} />
-        <Route path="/info/:id" children={<Game />} />
-      </BrowserRouter>
-    </DataProvider>
+    <BrowserRouter>
+      <Route path="/" exact component={SearchComponent} />
+      <Route path="/top" exact component={TopGames} />
+      <Route path="/info/:id" children={<Game />} />
+      <Route path="/error" children={<ErrorPage/>}/>
+      <Route path="/header" children={<Header/>}/>
+    </BrowserRouter>
   );
 }
 
