@@ -16,7 +16,7 @@ Build with:
 
 **Back-end**
 ```
-https://github.com/oHTGo/steam-tracker
+[Steam-Traker](https://github.com/oHTGo/steam-tracker)
 ```
 
 ## Setup
