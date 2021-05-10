@@ -5,7 +5,7 @@ const SaleComponent = (props) => {
   return (
     <a
       href={`/info/${props.id}`}
-      className="relative cursor-pointer 
+      className="inline cursor-pointer 
     transition md:duration-500 md:ease-in-out 
     transform md:hover:-translate-y-1 md:hover:scale-110"
     >

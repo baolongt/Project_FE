@@ -9,10 +9,11 @@ const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    if (searchValue.length === 0 && searchedData.length !== 0) {
+    let length = searchValue.length;
+    if (length === 0 && length !== 0) {
       setSearchedData([]);
     }
-    if (searchValue.length === 0) {
+    if (length === 0) {
       return;
     }
     const getData = () => {
@@ -73,7 +74,7 @@ const SearchBar = () => {
         }
       >
         <div className="pt-1 pb-1 pr-1 z-1">
-          {searchedData.map((data, index) => {
+          {searchedData.slice(0, searchedData.length / 2).map((data, index) => {
             return (
               <ResultComponent
                 key={index}
