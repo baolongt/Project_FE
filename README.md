@@ -15,7 +15,7 @@ Build with:
 - Show top sales
 
 **Back-end**
-[Steam-Traker](https://github.com/oHTGo/steam-tracker)
+[Steam-Tracker](https://github.com/oHTGo/steam-tracker)
 
 ## Setup
 To run this project, install it locally using npm:
