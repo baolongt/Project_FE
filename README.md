@@ -1,4 +1,4 @@
-# **Steam tracker Front-end**
+# **Steam tracker**
 Steam tracker is a front-end app to show Steam games detail and their price in each country
 
 Build with:
