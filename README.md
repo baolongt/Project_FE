@@ -4,6 +4,7 @@ Steam tracker is a front-end app to show Steam games detail and their price in e
 Build with:
  - ReactJS
  - Tailwindcss
+ - Font Awesome
 
 ## Features
 - Show information of games:
