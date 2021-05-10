@@ -1,18 +1,28 @@
 # **Steam tracker Front-end**
+Steam tracker is a front-end app to show Steam games detail and their price in each country
+
 Build with:
  - ReactJS
  - Tailwindcss
 
-**Install Tailwindcss to Project**
+## Features
+- Show information of games:
+    + Detail of game
+    + Countries price of game
+- Show top games
+- Show top sales
+
+**Back-end**
 ```
-npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
-npm install @craco/craco
+https://github.com/oHTGo/steam-tracker
 ```
 
-**Run Back-end**
+## Setup
+To run this project, install it locally using npm:
 ```
-npm run start:dev
+npm install
 ```
+
 **Run Project**
 ```
 npm start
