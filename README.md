@@ -1,6 +1,7 @@
 # **Steam tracker**
-Steam tracker is a front-end app to show Steam games detail and their price in each country
 
+## Features
+Steam tracker is a front-end app to find game on steam and to check its price and track price in many countries
 Build with:
  - ReactJS
  - Tailwindcss
